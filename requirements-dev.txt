@@ -1,0 +1,6 @@
+pytest-cov
+black
+flake8
+pre-commit
+sphinx
+sphinx-rtd-theme

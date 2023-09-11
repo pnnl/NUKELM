@@ -1,0 +1,13 @@
+{   
+    "model_name_or_path": "distilbert-base-uncased",
+    "train_file": "src/tests/fixtures/example-osti-abstracts.csv",
+    "validation_file": "src/tests/fixtures/example-osti-abstracts.csv",
+    "output_dir": "{tmp_dir}",
+    "overwrite_output_dir": true,
+    "do_train": true,
+    "do_eval": true,
+    "max_steps": 5,
+    "no_cuda": true,
+    "reinit_layers": 1,
+    "log_additional_params": "{\"example_param_name\": \"example_value\"}"
+}

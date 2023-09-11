@@ -1,0 +1,4 @@
+[console_scripts]
+nukelm-finetune = nukelm:run_fine_tune
+nukelm-pretrain = nukelm:run_language_modeling
+nukelm-serve = nukelm:run_serve

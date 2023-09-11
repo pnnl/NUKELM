@@ -1,0 +1,94 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_size": 34652,
+  "description": "",
+  "download_checksums": {
+    "src/tests/fixtures/example-osti-abstracts.csv": {
+      "checksum": "b1c418cd9b470c60c82017a943f7609d2f68e364acc8605e1ace0736f4cfcc3b",
+      "num_bytes": 34528
+    }
+  },
+  "download_size": 34528,
+  "features": {
+    "CLS": {
+      "_type": "Sequence",
+      "feature": {
+        "_type": "Value",
+        "dtype": "float64",
+        "id": null
+      },
+      "id": null,
+      "length": -1
+    },
+    "MAX": {
+      "_type": "Sequence",
+      "feature": {
+        "_type": "Value",
+        "dtype": "float64",
+        "id": null
+      },
+      "id": null,
+      "length": -1
+    },
+    "MEAN": {
+      "_type": "Sequence",
+      "feature": {
+        "_type": "Value",
+        "dtype": "float64",
+        "id": null
+      },
+      "id": null,
+      "length": -1
+    },
+    "label": {
+      "_type": "Value",
+      "dtype": "string",
+      "id": null
+    },
+    "labels": {
+      "_type": "Value",
+      "dtype": "string",
+      "id": null
+    },
+    "scores": {
+      "LABEL_0": {
+        "_type": "Value",
+        "dtype": "float64",
+        "id": null
+      },
+      "LABEL_1": {
+        "_type": "Value",
+        "dtype": "float64",
+        "id": null
+      }
+    },
+    "text": {
+      "_type": "Value",
+      "dtype": "string",
+      "id": null
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "post_processed": null,
+  "post_processing_size": null,
+  "size_in_bytes": 69180,
+  "splits": {
+    "train": {
+      "dataset_name": "csv",
+      "name": "train",
+      "num_bytes": 34652,
+      "num_examples": 40
+    }
+  },
+  "supervised_keys": null,
+  "version": {
+    "description": null,
+    "major": 0,
+    "minor": 0,
+    "patch": 0,
+    "version_str": "0.0.0"
+  }
+}

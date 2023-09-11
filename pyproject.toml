@@ -1,0 +1,35 @@
+[tool.black]
+line-length = 119
+target-version = ["py38"]
+
+[tool.isort]
+src_paths = ""
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 119
+ensure_newline_before_comments = true
+lines_after_imports = 2
+known_first_party = "nukelm"
+
+[tool.nbqa.config]
+isort = "pyproject.toml"
+black = "pyproject.toml"
+flake8 = "setup.cfg"
+mypy = "setup.cfg"
+
+[tool.nbqa.mutate]
+isort = 1
+black = 1
+pyupgrade = 1
+
+[tool.nbqa.files]
+isort = "^notebooks/"
+black = "^notebooks/"
+flake8 = "^notebooks/"
+pyupgrade = "^notebooks/"
+mypy = "^notebooks/"
+
+[tool.nbqa.addopts]
+pyupgrade = ["--py38-plus"]

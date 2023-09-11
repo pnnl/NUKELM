@@ -1,0 +1,48 @@
+exclude: "^src/nukelm/(finetune/run_glue.py$|pretrain/run_mlm.py$)"
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+        args: [--maxkb=1024]
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        name: isort (python)
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.9.0
+    hooks:
+      - id: pyupgrade
+        args: [--py38-plus]
+  - repo: https://github.com/psf/black
+    rev: 23.7.0
+    hooks:
+      - id: black
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.4.1
+    hooks:
+      - id: mypy
+  - repo: https://github.com/pycqa/pydocstyle
+    rev: 6.3.0
+    hooks:
+      - id: pydocstyle
+        exclude: ^src/tests/
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.7.0
+    hooks:
+      - id: nbqa-isort
+        additional_dependencies: [isort==5.12.0]
+      - id: nbqa-pyupgrade
+        additional_dependencies: [pyupgrade==3.9.0]
+      - id: nbqa-black
+        additional_dependencies: [black==23.7.0]
+      - id: nbqa-flake8
+        args: ["--extend-ignore=E402"]
+        additional_dependencies: [flake8==6.0.0]
+      - id: nbqa-mypy
+        additional_dependencies: ["mypy==v1.4.1"]

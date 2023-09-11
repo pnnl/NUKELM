@@ -1,0 +1,23 @@
+{
+    "model_name_or_path": "roberta-base",
+    "tokenizer_name": "roberta-base",
+    "train_file": "data/01_raw/OSTI/pre-train/train.txt",
+    "validation_file": "data/01_raw/OSTI/pre-train/val.txt",
+    "num_train_epochs": 5,
+    "learning_rate": 1e-4,
+    "warmup_steps": 155,
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 16,
+    "per_device_eval_batch_size": 8,
+    "output_dir": "data/06_models/NukeLM-MLM",
+    "logging_dir": "logs/NukeLM-MLM",
+    "seed": 42,
+    "do_train": true,
+    "do_eval": true,
+    "evaluation_strategy": "steps",
+    "load_best_model_at_end": true,
+    "logging_steps": 129,
+    "save_steps": 129,
+    "eval_steps": 129,
+    "fp16": true
+}
