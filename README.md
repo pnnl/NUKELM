@@ -1,7 +1,7 @@
 # NukeLM
 
 Utilities for training, serving, and inspecting the NukeLM models.
-
+For access to the model weights, please email nukelm@pnnl.gov and provide your name and institution.
 
 
 ## Set-Up
